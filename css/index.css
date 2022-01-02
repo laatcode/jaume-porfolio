@@ -22,12 +22,12 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
   color: var(--primary);
-  background: var(--gradient);
+  background: var(--gradient) no-repeat;
   /* background-color: var(--primary); */
   /* font: var(--headline2); */
 }
@@ -105,6 +105,7 @@ body {
   max-width: 543px;
   display: inline-block;
   margin-top: 24px;
+  min-height: 500px;
 }
 
 .hero .main h5 {
@@ -165,4 +166,25 @@ body {
 .hero .profile-picture img {
   position: absolute;
   bottom: 0;
+}
+
+.section1 {
+  padding: 200px 0;
+  text-align: center;
+}
+
+.section1 .first {
+  max-width: 900px;
+  font: 300 2.125rem 'Oxygen';
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.section1 .second {
+  font: var(--headline5);
+  margin-bottom: 24px;
+}
+
+.section1 .next img {
+  width: 80px;
 }
