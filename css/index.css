@@ -17,6 +17,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -25,7 +26,7 @@ body {
 }
 
 body {
-  color: var(--white);
+  color: var(--primary);
   background: var(--gradient);
   /* background-color: var(--primary); */
   /* font: var(--headline2); */
@@ -98,4 +99,70 @@ body {
 .header .curriculum button {
   text-transform: uppercase;
   border: none;
+}
+
+.hero .main {
+  max-width: 543px;
+  display: inline-block;
+  margin-top: 24px;
+}
+
+.hero .main h5 {
+  font: var(--headline5);
+}
+
+.hero .main h2 {
+  font: var(--headline2);
+  margin-bottom: 16px;
+}
+
+.hero .main p {
+  font: var(--body1);
+  margin-bottom: 16px;
+}
+
+.hero .main .social-networks {
+  display: flex;
+  width: 224px;
+  justify-content: space-between;
+}
+
+.hero .main .social {
+  border: 2px solid var(--primary);
+  background: var(--white);
+  border-radius: 4px;
+  padding: 13px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .profile-picture {
+  float: right;
+}
+
+.hero .profile-picture .back {
+  background: #6f34fe;
+  width: 500px;
+  height: 500px;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .profile-picture .front {
+  background: var(--white);
+  width: 100%;
+  height: 88px;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero .profile-picture img {
+  position: absolute;
+  bottom: 0;
 }
