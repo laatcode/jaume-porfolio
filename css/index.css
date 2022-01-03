@@ -35,9 +35,13 @@ body {
 .btn {
   padding: 13px 24px;
   border-radius: 4px;
-  font-weight: bold;
+  font-weight: 700;
   transition: 300ms;
   cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  font: var(--button);
+  letter-spacing: 2px;
 }
 
 .btn:active {
@@ -45,8 +49,14 @@ body {
 }
 
 .primary {
-  background-color: var(--primary);
+  background: var(--primary);
   color: var(--white);
+}
+
+.secondary {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
 }
 
 .container {
@@ -94,11 +104,6 @@ body {
 
 .header .menu ul li a:hover {
   border-bottom: 2px solid currentColor;
-}
-
-.header .curriculum button {
-  text-transform: uppercase;
-  border: none;
 }
 
 .hero .main {
@@ -187,4 +192,29 @@ body {
 
 .section1 .next img {
   width: 80px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project .data .title {
+  font: var(--headline4);
+  background: var(--primary);
+  color: var(--white);
+  padding: 4px 8px;
+  display: inline-block;
+  margin-bottom: 16px;
+  box-shadow: -4px 4px 0px 0px var(--white);
+}
+
+.project .data p {
+  font: var(--body1);
+  margin-bottom: 16px;
+}
+
+.project .data .buttons .primary {
+  margin-right: 16px;
 }
