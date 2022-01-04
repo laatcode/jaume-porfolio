@@ -218,3 +218,28 @@ body {
 .project .data .buttons .primary {
   margin-right: 16px;
 }
+
+.comment {
+  padding: 80px 75px;
+}
+
+.comment .container {
+  background: #ffffff33;
+  border-radius: 24px;
+}
+
+.comment .container .content {
+  padding: 80px 30px;
+  text-align: center;
+}
+
+.comment .container .content p {
+  font: 700 2.125rem 'Oxygen';
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.comment .container .content h5 {
+  font: var(--headline5);
+  opacity: 0.5;
+}
