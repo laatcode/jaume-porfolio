@@ -59,6 +59,24 @@ body {
   color: var(--primary);
 }
 
+.links {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.links .link {
+  border: 2px solid var(--primary);
+  background: var(--white);
+  border-radius: 4px;
+  padding: 13px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -125,24 +143,6 @@ body {
 .hero .main p {
   font: var(--body1);
   margin-bottom: 16px;
-}
-
-.hero .main .social-networks {
-  display: flex;
-  width: 224px;
-  justify-content: space-between;
-}
-
-.hero .main .social {
-  border: 2px solid var(--primary);
-  background: var(--white);
-  border-radius: 4px;
-  padding: 13px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero .profile-picture {
@@ -242,4 +242,29 @@ body {
 .comment .container .content h5 {
   font: var(--headline5);
   opacity: 0.5;
+}
+
+.footer {
+  height: 83px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .text {
+  font: var(--body1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.footer .text img {
+  width: 20px;
+}
+
+.footer .logo {
+  font: var(--headline5);
+  font-weight: 900;
 }
