@@ -77,6 +77,16 @@ body {
   justify-content: center;
 }
 
+.title {
+  font: var(--headline4);
+  background: var(--primary);
+  color: var(--white);
+  padding: 4px 8px;
+  display: inline-block;
+  margin-bottom: 16px;
+  box-shadow: -4px 4px 0px 0px var(--white);
+}
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
@@ -200,16 +210,6 @@ body {
   justify-content: space-between;
 }
 
-.project .data .title {
-  font: var(--headline4);
-  background: var(--primary);
-  color: var(--white);
-  padding: 4px 8px;
-  display: inline-block;
-  margin-bottom: 16px;
-  box-shadow: -4px 4px 0px 0px var(--white);
-}
-
 .project .data p {
   font: var(--body1);
   margin-bottom: 16px;
@@ -242,6 +242,54 @@ body {
 .comment .container .content h5 {
   font: var(--headline5);
   opacity: 0.5;
+}
+
+.contact-us .content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-us .content .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-us .content p {
+  color: white;
+  text-align: center;
+  font: var(--body1);
+}
+
+.contact-us .content form {
+  padding: 24px 0 80px;
+}
+
+.contact-us .content form button {
+  width: 100%;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  font: var(--body1);
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #858c94;
+  padding: 12px 16px;
+  line-height: 26px;
+  outline: none;
+  font: var(--body1);
 }
 
 .footer {
