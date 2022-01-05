@@ -293,7 +293,7 @@ body {
 }
 
 .footer {
-  height: 83px;
+  min-height: 83px;
   color: var(--white);
   display: flex;
   justify-content: space-between;
@@ -315,4 +315,119 @@ body {
 .footer .logo {
   font: var(--headline5);
   font-weight: 900;
+}
+
+@media (max-width: 1060px) {
+  .container {
+    padding: 16px;
+  }
+
+  .header .menu {
+    display: none;
+  }
+
+  .hero .profile-picture {
+    float: initial;
+    width: 100%;
+  }
+
+  .hero .profile-picture .back {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .hero .main {
+    min-height: initial;
+  }
+
+  .hero .main h2 {
+    font: var(--headline3);
+  }
+
+  .section1 {
+    padding: 40px 0;
+  }
+
+  .section1 .first {
+    font: var(--headline5);
+    font-weight: 400;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .project .data {
+    order: 3;
+  }
+
+  .project img {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .project .data .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project .data .buttons button {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .project .data .buttons .primary {
+    order: 3;
+  }
+
+  .comment {
+    padding: 80px 1rem;
+  }
+
+  .comment .container .content {
+    padding: 30px 30px;
+  }
+
+  .comment .container .content img {
+    margin-bottom: 24px;
+  }
+
+  .comment .container .content p {
+    font: 700 1rem 'Oxygen';
+    overflow-wrap: break-word;
+  }
+
+  .comment .container .content h5 {
+    overflow-wrap: break-word;
+    font: var(--body2);
+  }
+
+  .contact-us .content .title {
+    width: initial;
+    text-align: left;
+  }
+
+  .contact-us .content p {
+    text-align: left;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer .logo {
+    display: none;
+  }
+
+  .footer .text {
+    position: initial;
+    order: 3;
+    margin-top: 24px;
+  }
+
+  .footer .copyright {
+    display: block;
+  }
 }
